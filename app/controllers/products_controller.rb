@@ -58,7 +58,7 @@ class ProductsController < ApplicationController
   end
 
   def new_movement
-    
+    @product = Product.find(params[:id])
   end
 
   private
