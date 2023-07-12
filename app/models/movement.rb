@@ -11,8 +11,8 @@ class Movement < ApplicationRecord
   end
 
   def movement_type_name
-    return "Add" if movement_type == MovementTypes[:add]
-    return "Remove" if movement_type == MovementTypes[:remove]
+    return "Add to stock" if movement_type == MovementTypes[:add]
+    return "Remove from stock" if movement_type == MovementTypes[:remove]
   end
 
 end
